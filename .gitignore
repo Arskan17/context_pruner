@@ -1,4 +1,6 @@
 provence_exps/
+__pycache__/
+*.pyc
 
 ger*
 jj.*
