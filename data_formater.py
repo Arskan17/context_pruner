@@ -1,4 +1,5 @@
 import json
+import orjson
 from concurrent.futures import ProcessPoolExecutor
 import os
 import uuid
@@ -38,4 +39,4 @@ if __name__ == "__main__":
     formatter = DataFormatter()
     
     with open('german_rag_transformed.jsonl', 'r', encoding='utf-8', errors='ignore') as file:
-        [formatter.transform_file(json.loads(line)) for line in file if line.strip()]
+        [formatter.transform_file(orjson.loads(line)) for line in file if line.strip()]
