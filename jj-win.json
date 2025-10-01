@@ -1,0 +1,21 @@
+{
+  "query": "Was sind die besonderen Merkmale der Nahrungslager des Europäischen Maulwurfs vor den Wintermonaten?",
+  "context": [
+    "Hauptsächlich vor den Wintermonaten lagert der Europäische Maulwurf Regenwürmer in seinem Tunnelsystem an. Einige derartiger Vorratskammern können aus bis zu 790 Regenwürmern mit einem Gesamtgewicht von 1,5 kg bestehen, was einer Nahrungsmenge für mehr als drei Wochen entspricht.",
+    "Der Anteil an Insektenlarven ist dem gegenüber sehr gering. Bei der Lagerung beißt der Europäische Maulwurf den Regenwürmern die vorderen drei bis fünf Körpersegmente ab, wodurch diese betäubt werden.",
+    "Teilweise enthalten die Nahrungslager verhältnismäßig häufiger Individuen größerer Regenwurmarten aus den Gattungen \"Octolasium\" und \"Lumbricus\" als sie prozentual in der Umgebung vorkommen, was für eine Nahrungsselektion spricht und die Bevorzugung kleinerer Regenwürmer reflektiert.",
+    "Die Lager werden im Herbst angelegt und sind mit den Nestkammern und mitunter auch mit den „Burgen“ verbunden. Sie befinden sich sowohl an den Tunnelwänden als auch in einzelnen speziell gegrabenen Kammern.",
+    "In verschiedenen Studien im Schottland und im südlichen Polen wurden in 85 bis 100 % der analysierten Magenreste Hinweise auf Regenwürmer gefunden.",
+    "Andere Bestandteile der Nahrung umfassen verschiedenste Insekten wie Blatthornkäfer, Schnellkäfer, Langbeinfliegen, Schnaken, Haarmücken, Tanzfliegen, Eulenfalter und Laufkäfer. Hierbei fressen die Tiere bevorzugt die Larven.",
+    "Hinzu kommen auch die ausgewachsenen Individuen von Hundertfüßern und Weichtieren. Tiere in menschlicher Gefangenschaft fraßen neben Regenwürmern zusätzlich Mehlwürmer, Maden und junge Mäuse.",
+    "Die Zusammensetzung der Nahrung ist weder von Alter noch Geschlecht abhängig. Dagegen gibt es leichte jahreszeitliche Schwankungen im Anteil der Regenwürmer, der im Winter höher und im Sommer niedriger ist.",
+    "Dem entsprechend fällt und steigt der Anteil der Insekten, hier besonders der der Schnaken. Häufig vertilgt der Europäische Maulwurf kleinere Regenwürmer zuerst, was vor allem an Tieren in Gefangenschaft beobachtet wurde.",
+    "Hierbei verschlingt er Regenwürmer bis 8 cm Körperlänge vollständig, nur größere zerbeißt er. Die Regenwürmer werden überwiegend mit dem Kopfende zuerst verspeist und der Mageninhalt vor allem bei den größeren Individuen ausgedrückt."
+  ],
+  "selected_sents": [
+    1,
+    2,
+    3
+  ],
+  "response": "Hauptsächlich lagert der Europäische Maulwurf Regenwürmer in seinem Tunnelsystem an. [1] Bei der Lagerung beißt der Europäische Maulwurf den Regenwürmern die vorderen drei bis fünf Körpersegmente ab, wodurch diese betäubt werden. [2]"
+}
