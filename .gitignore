@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 
 ger*
-jj.*
+# jj.*
 
 MS-MARCO*
 tool-use-example.py
