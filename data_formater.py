@@ -12,17 +12,20 @@ class DataFormatter:
 
     def transform_file(self, input_line):
         contexts = re.split(r'\. |\n\n', input_line.get("answer", ""))
+        query_id = str(uuid.uuid4())
         output_line = {
             "answers": [],
-            "passages": [{
-                    "is_selected":0,
-                    "url":"",
+            "passages": [
+                {
+                    "is_selected": 0,
+                    "url": f"dataset/{query_id}",
                     "passage_text": context
-                } for context in contexts if context],
+                } for context in contexts
+            ],
             "query": input_line.get("query", ""),
-            "query_id": str(uuid.uuid4()),
+            "query_id": query_id,
             "query_type": "question_answering",
-            # "wellFormedAnswers": []
+            "wellFormedAnswers": []
         }
 
         self.write_line_to_file(output_line)
