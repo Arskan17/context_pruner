@@ -8,7 +8,7 @@ import re
 class DataFormatter:
 
     def __init__(self):
-        pass
+        self.index = 0
 
     def transform_file(self, input_line):
         contexts = re.split(r'\. |\n\n', input_line.get("answer", ""))
@@ -18,7 +18,7 @@ class DataFormatter:
             "passages": [
                 {
                     "is_selected": 0,
-                    "url": f"dataset/{query_id}",
+                    "url": f"file://dataset[{self.index}].{query_id}",
                     "passage_text": context
                 } for context in contexts
             ],
@@ -27,6 +27,7 @@ class DataFormatter:
             "query_type": "question_answering",
             "wellFormedAnswers": []
         }
+        self.index += 1
 
         self.write_line_to_file(output_line)
 
@@ -34,12 +35,8 @@ class DataFormatter:
         with open('german_rag_transformed_reformated_MS-MARCO_v1.1.jsonl', 'a', encoding='utf-8') as f:
             f.write(json.dumps(line, ensure_ascii=False) + '\n')
 
-    def write_line_to_file_cuncurrently(self, line):
-        with open('german_rag_transformed_reformated_cuncurrent_MS-MARCO_v1.1.jsonl', 'a', encoding='utf-8') as f:
-            f.write(json.dumps(line, ensure_ascii=False) + '\n')
-
 if __name__ == "__main__":
     formatter = DataFormatter()
     
     with open('german_rag_transformed.jsonl', 'r', encoding='utf-8', errors='ignore') as file:
-        [formatter.transform_file(orjson.loads(line)) for line in file if line.strip()]
+        [formatter.transform_file(orjson.loads(line)) for line in file.readlines()[:1] if line.strip()]
